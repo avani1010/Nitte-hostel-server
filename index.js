@@ -1,7 +1,7 @@
 const express = require("express") ;
 const mongoose = require("mongoose") ;
 const app = express();
-const PORT = process.env.port || 5000
+const port = process.env.PORT || 5000
 
 mongoose.connect("mongodb+srv://hostelAdmin:qwerty123@@cluster0.y6vfi.mongodb.net/Hostel?retryWrites=true&w=majority" , {useNewUrlParser : true, useCreateIndex : true , useUnifiedTopology : true})
 .then( () => {
@@ -29,4 +29,4 @@ res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Ty
 res.json("Rest api1")});
 
 
-app.listen(PORT,()=> console.log(`Your server is running on port ${PORT}`)) ;
+app.listen(PORT,()=> console.log(`Your server is running on port ${port}`)) ;
