@@ -33,7 +33,7 @@ const Student = Schema({
         unique : true ,
     },
     sem : {
-        type : Number ,
+        type : String ,
         required : true ,
         unique : false ,
     },
@@ -48,7 +48,7 @@ const Student = Schema({
         unique : false ,
     },
     room_no : {
-        type : Number ,
+        type : String,
         required : true ,
         unique : false ,
     },
