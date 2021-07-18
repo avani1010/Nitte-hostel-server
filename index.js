@@ -5,7 +5,7 @@ const port = process.env.PORT || 5000
 
 mongoose.connect("mongodb+srv://hostelAdmin:qwerty123@@cluster0.y6vfi.mongodb.net/Hostel?retryWrites=true&w=majority" , {useNewUrlParser : true, useCreateIndex : true , useUnifiedTopology : true})
 .then( () => {
-    console.log('Connected to MongoDB ')
+    console.l0g('Connected to MongoDB ')
 })
 .catch( (err) => {
     console.error(`Error connecting to the database. \n${err}`);

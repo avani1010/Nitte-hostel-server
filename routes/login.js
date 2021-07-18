@@ -8,10 +8,7 @@ const router = express.Router() ;
 
 router.route("/:reg_no").get((req, res) => {
     Student.findOne({ reg_no: req.params.reg_no }, (err, result) => {
-        console.log("checking") ;
       if (err) return res.status(500).json({ msg: err });
-      console.log("found");
-      console.log(result.body)
       return res.json({
         data: result,
         reg_no: req.params.reg_no,

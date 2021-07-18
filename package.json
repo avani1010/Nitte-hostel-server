@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index",
-    "dev": "nodemon index"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "dependencies": {
     "ejs": "^3.1.6",
@@ -14,7 +14,8 @@
     "mongoose": "^5.13.2"
   },
   "engines": {
-    "node": "14.x"
+    "node": "14.x",
+    "npm" : "7.x"
   },
   "devDependencies": {},
   "author": "",
