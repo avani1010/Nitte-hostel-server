@@ -1,5 +1,5 @@
 {
-  "name": "hostel_server",
+  "name": "hostel-server",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
