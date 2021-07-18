@@ -29,6 +29,48 @@ router.route("/:reg_no").get((req, res) => {
         });
     });
   });
+
+  router.route("/checkusn/:usn").get((req, res) => {
+    Student.findOne({ usn: req.params.usn}, (err, result) => {
+      if (err) return res.status(500).json({ msg: err });
+      if (result !== null) {
+        return res.json({
+          Status: true,
+        });
+      } else
+        return res.json({
+          Status: false,
+        });
+    });
+  });
+
+  router.route("/checkphoneNumber/:phoneNumber").get((req, res) => {
+    Student.findOne({ phoneNumber: req.params.phoneNumber }, (err, result) => {
+      if (err) return res.status(500).json({ msg: err });
+      if (result !== null) {
+        return res.json({
+          Status: true,
+        });
+      } else
+        return res.json({
+          Status: false,
+        });
+    });
+  });
+
+  router.route("/checkemail/:email").get((req, res) => {
+    Student.findOne({ email: req.params.email}, (err, result) => {
+      if (err) return res.status(500).json({ msg: err });
+      if (result !== null) {
+        return res.json({
+          Status: true,
+        });
+      } else
+        return res.json({
+          Status: false,
+        });
+    });
+  });
   
 
 router.route("/login").post((req,res) => {

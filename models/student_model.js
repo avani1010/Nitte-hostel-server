@@ -32,11 +32,6 @@ const Student = Schema({
         required : true ,
         unique : true ,
     },
-    gender : {
-        type : String ,
-        required : true ,
-        unique : false ,
-    },
     sem : {
         type : Number ,
         required : true ,
@@ -45,12 +40,12 @@ const Student = Schema({
     Mphone : {
         type : String ,
         required : true ,
-        unique : true ,
+        unique : false 
     },
     Fphone : {
         type : String ,
         required : true ,
-        unique : true ,
+        unique : false ,
     },
     room_no : {
         type : Number ,

@@ -7,17 +7,17 @@ router.route("/register").post((req,res) => {
     console.log("Inside register") ;
     const student = new Student({
         reg_no : req.body.reg_no,
-        password : req.body.password ,
         name : req.body.name ,
         usn : req.body.usn,
         email : req.body.email ,
         phoneNumber : req.body.phoneNumber,
-        gender : req.body.gender,
         sem : req.body.sem,
         Mphone : req.body.Mphone,
         Fphone : req.body.Fphone,
         room_no : req.body.room_no,
-        hostel : req.body.hostel
+        hostel : req.body.hostel,
+        password : req.body.password ,
+
 
     });
    
