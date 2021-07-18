@@ -29,4 +29,4 @@ res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Ty
 res.json("Rest api1")});
 
 
-app.listen(PORT,()=> console.log(`Your server is running on port ${port}`)) ;
+app.listen(port,()=> console.log(`Your server is running on port ${port}`)) ;
