@@ -5,7 +5,7 @@ const Complaint = Schema({
     reg_no : {
         type : String ,
         required : true ,
-        unique : true ,
+        unique : false,
     },
     name : {
         type : String ,
@@ -15,17 +15,17 @@ const Complaint = Schema({
     usn : {
         type : String ,
         required : true ,
-        unique : true ,
+        unique : false ,
     },
     email : {
         type : String ,
         required : true ,
-        unique : true ,
+        unique : false ,
     },
     phoneNumber : {
         type : String ,
         required : true ,
-        unique : true ,
+        unique : false 
     },
     room_no : {
         type : String,
