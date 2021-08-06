@@ -30,7 +30,7 @@ app.use("/",complaintRoute);
 
 app.route("/").get((req,res) => { res.header("Access-Control-Allow-Origin", "*");
 res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-res.json("Rest api1")});
+res.json("Hostel server!")});
 
 
 app.listen(port,()=> console.log(`Your server is running on port ${port}`)) ;

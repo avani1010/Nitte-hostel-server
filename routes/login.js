@@ -74,14 +74,11 @@ router.route("/:reg_no").get((req, res) => {
   
 
 router.route("/login").post((req,res) => {
-    console.log("here first")
     Student.findOne({reg_no : req.body.reg_no}, (err, result)=>{
-         console.log("here");
-        console.log(req)
         if(err){ res.status(500).json({ msg :err })}
         else if(result===null){ 
-            
-            res.status(403).json("Registration number not found. Please register if you are a new user!") }
+            res.status(403).json("Registration number not found. Please register if you are a new user!") 
+          }
         else if(result.password===req.body.password){
             // here we implement the JWT token functionality
             console.log("reg_no is correct");
